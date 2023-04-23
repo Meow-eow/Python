@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block css %}
+    <link rel="stylesheet" href="../static/css/world.css">
+{% endblock %}
+{% block content %}
+    <div id="title">
+        <a href="/" class="china_title">全国疫情</a>
+        &nbsp;&nbsp;
+        <span class="world_title" style="">全球疫情</span>
+    </div>
+    <div id="time">时间</div>
+    <div id="left1">左一</div>
+    <div id="left2">左二</div>
+    <div id="mid1">
+        <div class="num"><h1>217023196</h1></div>
+        <div class="num"><h1>46988457</h1></div>
+        <div class="num"><h1>165524460</h1></div>
+        <div class="num"><h1>4510279</h1></div>
+        <div class="txt">
+            <h2>累计确诊</h2>
+        </div>
+        <div class="txt">
+            <h2>现有确诊</h2>
+        </div>
+        <div class="txt">
+            <h2>累计治愈</h2>
+        </div>
+        <div class="txt">
+            <h2>累计死亡</h2>
+        </div>
+    </div>
+    <div id="mid2"></div>
+    <div id="right1">右一</div>
+    <div id="right2">右二</div>
+{% endblock %}
+{% block js %}
+    <script src="../static/asset/js/world_map.js"></script>
+    <script src="../static/asset/js/world_left1.js"></script>
+    <script src="../static/asset/js/world_left2.js"></script>
+    <script src="../static/asset/js/world_right1.js"></script>
+    <script src="../static/asset/js/right2.js"></script>
+    <script src="../static/asset/js/main_world.js"></script>
+{% endblock %}

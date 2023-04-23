@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    background-color: #666;
+    background:#000d4a url(../images/bg.jpg) center top;
+    background-size:cover;
+}
+#title{
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 0;
+    left: 30%;
+    /*background-color: gainsboro;*/
+    font-size: 35px;
+    color: white;
+    /*居中显示*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#time{
+    position: absolute;
+    /*width: 30%;*/
+    height: 10%;
+    top: 5%;
+    right: 2%;
+    color: white;
+    font-size: 20px;
+    /*background-color: aqua;*/
+}
+#left1{
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    top: 10%;
+    left: 0;
+    /*background-color: yellow;*/
+}
+#left2{
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    top: 55%;
+    left: 0;
+    /*background-color: red;*/
+}
+#mid1{
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 10%;
+    left: 30%;
+    /*background-color: deepskyblue;*/
+    color: white;
+}
+.num{
+    width: 25%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-size: 16px;
+}
+.txt{
+    width: 25%;
+    float: left;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: "幼圆";
+}
+#mid2{
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    top: 40%;
+    left: 30%;
+    /*background-color: greenyellow;*/
+}
+#right1{
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    top: 10%;
+    right: 0;
+    /*background-color: chocolate;*/
+}
+#right2{
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    top: 55%;
+    right: 0;
+    /*background-color: aqua;*/
+}
+footer{
+    position: absolute;
+    width: 40%;
+    height: 100px;
+    top: 100%;
+    left: 30%;
+    color: white;
+    font-size: .100rem;
+    text-align: center;
+    /*居中显示*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.world_title{
+    border-bottom: 3px solid #10aeb5;
+    padding-bottom: 4px;
+}
+.china_title{
+    font-size:26px;
+    color: gray;
+    text-decoration: none;
+}
+a.china_title:hover {
+    color: white;
+    border-bottom: 3px solid #10aeb5;
+    padding-bottom: 5px;
+}

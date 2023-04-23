@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="../static/stu.css" rel="stylesheet" style="text/css"/>
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="">
+    666666666666666666666666666666677777777777777777777777777777777777777777777777
+<!--    <img src="../static/picture/lbx.png" class="img1">-->
+<!--   {% for x in result %}-->
+    <span>
+        {{ results }}
+    </span>
+<!--    {% endfor %}-->
+
+</div>
+<div id="main">
+    </div>
+    <script>
+        var ls = {{ res }}
+            console.log(ls)
+        var lst = {{ rst }}
+        for (var i = 0; i < 25; i++)
+        {
+            console.log(lst[i])
+        }
+        //利用jinja2访问后端传过来的List列表，列表里面包含的是python对象，实际对应数据库的一张表
+        var allInfo=[
+        [{% for x in result %} "{{x}}", {% endfor %}],
+      [{% for x in res %} "{{x.now_confirm}}", {% endfor %}]]
+
+      var names =   [{% for x in res %} "{{x.province}}", {% endfor %}]
+
+      console.log(allInfo)
+            console.log(names)
+
+
+
+        var rs = {{ rst }}
+                var dys = {{ dy|safe }}
+
+var chartDom = document.getElementById('main');
+console.log(chartDom)
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+  xAxis: {
+    type: 'category',
+    data: dys
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: rs,
+      type: 'line'
+    }
+  ]
+};
+
+myChart.setOption(option);
+
+    </script>
+</body>
+</html>
